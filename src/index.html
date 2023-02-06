@@ -10,20 +10,71 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <script>
+      function generarExcusa() {
+        mostrarMensaje();
+      }
+
+      function determinarQuien() {
+        let quien = ["Mi perro", "Mi cuñado", "La gata", "El vecino"];
+
+        let indiceQuien = Math.floor(Math.random() * quien.length);
+
+        return quien[indiceQuien];
+      }
+
+      function determinarAccion() {
+        let accion = ["se ha comido", "ha tirado", "ha roto", "ha quemado"];
+
+        let indiceAccion = Math.floor(Math.random() * accion.length);
+
+        return accion[indiceAccion];
+      }
+
+      function determinarQue() {
+        let que = ["mis deberes", "la televisión", "la moto", "el ordenador"];
+
+        let indiceQue = Math.floor(Math.random() * que.length);
+
+        return que[indiceQue];
+      }
+
+      function determinarCuando() {
+        let cuando = [
+          "esta misma mañana.",
+          "durante la comida.",
+          "cuando estaba a punto de salir de casa.",
+          "por la noche."
+        ];
+
+        let indiceCuando = Math.floor(Math.random() * cuando.length);
+
+        return cuando[indiceCuando];
+      }
+
+      function unirDatos() {
+        return (
+          determinarQuien() +
+          " " +
+          determinarAccion() +
+          " " +
+          determinarQue() +
+          " " +
+          determinarCuando()
+        );
+      }
+
+      function mostrarMensaje() {
+        alert(unirDatos());
+      }
+    </script>
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+      <button type="button" class="btn btn-light" onclick="generarExcusa()">
+        Generar excusa
+      </button>
     </div>
   </body>
 </html>
