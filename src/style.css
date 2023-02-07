@@ -1,28 +1,35 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+body {
+  background-color: #f4ebc8;
+}
+
+.lazy {
+  background-color: #f4ebc8;
+  border-color: transparent;
+}
 .excuse {
   display: flex;
   margin: auto;
-  margin-top: 300px;
   justify-content: center;
   width: 150px;
 }
 
 /* CSS */
 .btn {
-  background-color: #c2fbd7;
+  background-color: #9bfcbf;
   border-radius: 100px;
   box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
     rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
     rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
     rgba(44, 187, 99, 0.15) 0 16px 32px;
-  color: green;
+  color: rgb(1, 105, 1);
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
   text-align: center;
   transition: all 250ms;
-  border: 0;
+  border: 1 solid green;
   font-size: 16px;
   user-select: none;
   -webkit-user-select: none;
