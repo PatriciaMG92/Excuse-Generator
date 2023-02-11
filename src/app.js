@@ -8,7 +8,7 @@ import { Button } from "bootstrap";
 
 const button = document.getElementById("myButton");
 
-button.addEventListener("click", generateExcuse);
+button.addEventListener("click", setExcuse);
 
 const who = ["Mi perro", "Mi cuñado", "La gata", "El vecino"];
 const action = ["se ha comido", "ha tirado", "ha roto", "ha quemado"];
@@ -68,7 +68,7 @@ function changeColor() {
   document.getElementById("message").style.color = getColor();
 }
 
-function generateExcuse() {
+function setExcuse() {
   showMessage();
   changeColor();
 }
